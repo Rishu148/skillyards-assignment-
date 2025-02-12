@@ -27,11 +27,13 @@ document.body.appendChild(div);
 
 div.addEventListener("mouseover", function(){
     div.style.backgroundColor = "blue";
+    div.style.color = "white";
 });
 
 div.addEventListener("mouseout", function(){
-    div.style.backgroundColor = "white";
-}); 
+    div.style.backgroundColor = "";
+    div.style.color = "";
+});
 
 
 

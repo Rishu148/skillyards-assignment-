@@ -11,17 +11,17 @@
 // *****
 
 
-// prompt = require("prompt-sync")();
+prompt = require("prompt-sync")();
 
-// let a = prompt("Enter the value of a: ");
+let a = prompt("Enter the value of a: ");
 
-// for (let i=1; i<=a; i++){
-//     let str = "";
-//     for (let j=1;j<=i;j++){
-//         str +="*";
-//     }
-//     console.log(str);
-// }
+for (let i=1; i<=a; i++){
+    let str = "";
+    for (let j=1;j<=i;j++){
+        str +="*";
+    }
+    console.log(str);
+}
 
 
 
