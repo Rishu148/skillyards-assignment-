@@ -44,13 +44,13 @@
 // function findMissingNumber(arr){
 //     let n = arr.length + 1
 //     let sum = (n * (n + 1)) / 2
-//     let arr1 = arr.flat()
-//     let arr2 = [...new Set(arr1)]
-//     let arr3 = arr2.sort((a,b)=>b-a)
-//     return sum - arr3
+//     let sum1 = 0
+//     for (let i=0; i<arr.length; i++){
+//         sum1 += arr[i]
+//     }
+//     return sum - sum1
 // }
 // console.log(findMissingNumber(arr));
-
 
 // ------------------------------------------------------------------------------------------
 
@@ -94,6 +94,31 @@
 
 
 
+ 
+// const fristReaptedWord=(str1)=>{
+//     let newArray=str1.split(" ")
+//     let obj={}
+//     for(let i=0;i<newArray.length;i++){
+//       if(obj[newArray[i]]) {
+//         obj[newArray[i]]++
+//       }else{
+//         obj[newArray[i]]=1
+//       }
+//     }
+//     for(let key in obj){
+//       if(obj[key]>1){
+//         return key
+//       }
+//     }
+// }
+    
+// let str1 = "JavaScript is great and JavaScript is fun!"
+// console.log(fristReaptedWord(str1))
+
+
+
+
+
 
 
 
@@ -133,3 +158,22 @@
 //     return []
 // }
 // console.log(twoSum([2, 7, 11, 15],9))
+
+
+
+
+
+
+
+
+
+
+
+
+// find first and last Word in a string
+
+let str = "i am software developer"
+let arr = str.split(" ")
+let firstWord = arr[0]
+let lastWord = arr[arr.length-1]
+console.log(firstWord);
