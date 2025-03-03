@@ -26,12 +26,11 @@
 // let head = a
 // let current = head
 
-// function insertAtBeginning(data){
-//     let newNode = new Node(data)
-//     newNode.next = current
-//     current = newNode
-// }
-// insertAtBeginning(0)
+
+//     let temp = new Node(0)
+//     temp.next = current
+//     current = temp
+
 
 
 // while(current!=null){
@@ -75,7 +74,7 @@
 // let head = a 
 // let current = head
 
-// let newNode = new Node(9)
+// let temp = new Node(9)
 
 
 
@@ -84,7 +83,7 @@
 //     current = current.next; 
 //     } 
 
-// current.next = newNode
+// current.next = temp
 
 
 // while(current!=null){
@@ -233,27 +232,16 @@
 // let head = a
 // let current = head
 
-
-// function deleteLastNode(head) {
-//     if (head.next == null) {
-//       return null;
-//     }
-  
-//     let current = head;
-//     while (current.next.next != null) {
-//       current = current.next;
-//     } 
-  
-//     current.next = null;
-//     return head;
+// while (current.next.next != null) {
+//     current = current.next;
 //   }
+
+//     current.next = null;
+//     current = head;
   
-  
-//  deleteLastNode(head);
-  
-//   while (head != null) {
-//     console.log(head.data);
-//     head = head.next;
+//   while (current != null) {
+//     console.log(current.data);
+//     current = current.next;
 //   } 
 
 
