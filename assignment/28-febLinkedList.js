@@ -78,19 +78,20 @@
 
 
 
-// while (current.next !== null) { 
+// while (current != null) { 
 //     console.log(current.data);
 //     current = current.next; 
 //     } 
 
-// current.next = temp
+//     temp.next = current
+//     current = temp 
+
 
 
 // while(current!=null){
 //     console.log(current.data)
 //     current = current.next
 // }
-
 
 
 

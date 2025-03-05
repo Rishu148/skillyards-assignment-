@@ -1,54 +1,41 @@
-class ListNode {
-    constructor(value) {
-      this.value = value;
-      this.next = null;
-    }
-  }
-  
-  let a = new ListNode(1);
-  let b = new ListNode(2);
-  let c = new ListNode(3);
-  let d = new ListNode(4);
-  let e = new ListNode(5);
-  
-  a.next = b;
-  b.next = c;
-  c.next = d;
-  d.next = e;
-  
-  function reverseLinkedList(head) {
-    let prev = null, current = head;
-  
-    while (current) {
-      let nextNode = current.next;
-      current.next = prev;
-      prev = current;
-      current = nextNode;
-    }
-    return prev;
-  }
-  
-  function printList(head) {
-    let result = [];
-    while (head) {
-      result.push(head.value);
-      head = head.next;
-    }
-    console.log(result.join(" -> "));
-  }
-  
-  console.log("Original List:");
-  printList(a);
-  
-  let reversedHead = reverseLinkedList(a);
-  
-  console.log("Reversed List:");
-  printList(reversedHead);
-  
-  // Output:    
-  // Original List: 1 -> 2 -> 3 -> 4 -> 5
-  
-  // Reversed List: 5 -> 4 -> 3 -> 2 -> 1
+// class node{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+
+// let a = new node(1);
+// let b = new node(2);
+// let c = new node(3);
+// let d = new node(4);
+// let e = new node(5);
+
+// a.next = b;
+// b.next = c;
+// c.next = d;
+// d.next = e;
+
+// let temp = []
+
+// let head = a;
+// let current = head;
+
+// while (current != null){
+//     temp.push(current.data);
+//     current = current.next;
+    
+// }
+
+
+// let i = temp.length-1;
+// current= head;
+
+
+// while(i>=0){
+//     console.log(temp[i]);
+//     i--;
+// }
 
 
 
@@ -87,4 +74,4 @@ class ListNode {
   let middleNode = findMiddleNode(f);
   console.log("Middle Node Value:", middleNode.value);
   
-  // Output: Middle Node Value: 3
+//   // Output: Middle Node Value: 3
