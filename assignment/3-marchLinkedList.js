@@ -42,36 +42,36 @@
 
 
 
-  class ListNode {
-    constructor(value) {
-      this.value = value;
-      this.next = null;
-    }
-  }
+  // class ListNode {
+  //   constructor(value) {
+  //     this.value = value;
+  //     this.next = null;
+  //   }
+  // }
   
-  let f = new ListNode(1);
-  let g = new ListNode(2);
-  let h = new ListNode(3);
-  let i = new ListNode(4);
-  let j = new ListNode(5);
+  // let f = new ListNode(1);
+  // let g = new ListNode(2);
+  // let h = new ListNode(3);
+  // let i = new ListNode(4);
+  // let j = new ListNode(5);
   
-  f.next = g;
-  g.next = h;
-  h.next = i;
-  i.next = j;
+  // f.next = g;
+  // g.next = h;
+  // h.next = i;
+  // i.next = j;
   
-  function findMiddleNode(head) {
-    let slow = head, fast = head;
+  // function findMiddleNode(head) {
+  //   let slow = head, fast = head;
   
-    while (fast !== null && fast.next !== null) {
-      slow = slow.next;
-      fast = fast.next.next;
-    }
+  //   while (fast !== null && fast.next !== null) {
+  //     slow = slow.next;
+  //     fast = fast.next.next;
+  //   }
   
-    return slow;
-  }
+  //   return slow;
+  // }
   
-  let middleNode = findMiddleNode(f);
-  console.log("Middle Node Value:", middleNode.value);
+  // let middleNode = findMiddleNode(f);
+  // console.log("Middle Node Value:", middleNode.value);
   
-//   // Output: Middle Node Value: 3
+

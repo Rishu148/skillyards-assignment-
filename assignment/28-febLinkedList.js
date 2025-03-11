@@ -263,42 +263,42 @@
 
 
 
-// class node{
-//     constructor(data){
-//         this.data = data
-//         this.next = null
-//     }
-// }
+class node{
+    constructor(data){
+        this.data = data
+        this.next = null
+    }
+}
 
-// let a = new node(1)
-// let b = new node(2)
-// let c = new node(3)
-// let d = new node(4)
-// let e = new node(5)
+let a = new node(1)
+let b = new node(2)
+let c = new node(3)
+let d = new node(4)
+let e = new node(5)
 
-// a.next = b
-// b.next = c
-// c.next = d
-// d.next = e
+a.next = b
+b.next = c
+c.next = d
+d.next = e
 
 
-// let prompt = require("prompt-sync")();
-// let n = prompt("Enter the position: ");
+let prompt = require("prompt-sync")();
+let n = prompt("Enter the position: ");
 
-// let head = a
-// let current = head
+let head = a
+let current = head
 
-// while (current != null && current.data != n) { 
-//     console.log(current.data);
-//     current = current.next; 
-//     }
+while (current != null && current.data != n) { 
+    console.log(current.data);
+    current = current.next; 
+    }
 
-// current = current.next
+current = current.next
 
-// while(current!=null){
-//     console.log(current.data)
-//     current = current.next
-// }
+while(current!=null){
+    console.log(current.data)
+    current = current.next
+}
 
 
 
